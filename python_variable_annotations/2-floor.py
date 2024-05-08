@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+import math
+"""
+    Imported math module
+"""
+
 """
     This module contains a function that takes in
     a float n as an argument and returns a floor of
