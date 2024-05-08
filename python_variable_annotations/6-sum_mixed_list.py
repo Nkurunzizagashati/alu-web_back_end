@@ -6,7 +6,7 @@
 """
 
 from typing import List
-from typign import Union
+from typing import Union
 """
     Imported List, and Union from typing to help us specify that
     it should be a list of objects, and also a combination of
