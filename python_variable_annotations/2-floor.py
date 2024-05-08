@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 
 import math
-"""
-    Imported math module that will five us access to
-    floor method
-"""
 
 """
     This module contains a function that takes in
