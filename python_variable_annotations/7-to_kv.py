@@ -13,13 +13,13 @@ from typing import Tuple
 """
 
 
-def to_kv(k: str, v: Union[int, float]) -> Tuple:
+def to_kv(k: str, v: Union[int, float]) -> Tuple[str, Union[int, float]]:
     """
         This function takes in a string and an int or a
-        float and return a tuple with the first element
+        float and returns a tuple with the first element
         which is that string and the second which is the
         square of that int or float depending on the one
         used
     """
 
-    return [k, v * v]
+    return (k, v * v)
