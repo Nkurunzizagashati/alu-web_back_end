@@ -7,3 +7,16 @@
 
 
 type input_list = list[float]
+
+def sum_list(input_list) -> float:
+    """
+        This function takes in a list of floats(input_list)
+        and returns its sum which should be of float type
+    """
+
+    prev_sum: float = 0.00
+
+    for item in input_list:
+        prev_sum += item
+
+    return prev_sum
