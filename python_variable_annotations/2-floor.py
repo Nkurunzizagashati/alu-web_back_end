@@ -2,7 +2,8 @@
 
 import math
 """
-    Imported math module
+    Imported math module that will five us access to
+    floor method
 """
 
 """
