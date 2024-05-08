@@ -3,16 +3,18 @@
 import math
 
 """
-    This module contains a function that takes in
-    a float n as an argument and returns a floor of
-    it
+    This module contains functions related to mathematical operations.
 """
 
 
 def floor(n: float) -> int:
     """
-        This function takes in a float n and returns
-        a floor of it
+        Return the floor of a floating-point number.
+        
+        Parameters:
+            n (float): The floating-point number.
+        
+        Returns:
+            int: The floor of the floating-point number.
     """
-
     return math.floor(n)
