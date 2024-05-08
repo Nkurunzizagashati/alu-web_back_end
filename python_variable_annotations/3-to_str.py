@@ -7,3 +7,9 @@
 
 
 def to_str(n: float) -> str:
+    """
+        This function takes in a float n and
+        returns it's string version
+    """
+
+    return str(n)
