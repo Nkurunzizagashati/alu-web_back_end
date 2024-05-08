@@ -6,13 +6,15 @@
 """
 
 from typing import List
+from typign import Union
 """
-    Imported List from typing to help us specify that
-    it should be a list of objects
+    Imported List, and Union from typing to help us specify that
+    it should be a list of objects, and also a combination of
+    different data types respectively
 """
 
 
-def sum_mixed_list(mxd_lst: List[int | float]) -> float:
+def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
     """
         This function takes in a list of integers and floats and
         returns a sum of them which is a float type
