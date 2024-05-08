@@ -6,6 +6,7 @@
 """
 
 from typing import Union
+from typing import Tuple
 """
     Imported Union from typing for defining hte possibility
     of two different data types
@@ -21,4 +22,4 @@ def to_kv(k: str, v: Union[int, float]) -> tuple:
         used
     """
 
-    return tuple[k, v * v]
+    return Tuple[k, v * v]
