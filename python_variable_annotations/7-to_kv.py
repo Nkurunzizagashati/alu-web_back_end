@@ -13,7 +13,7 @@ from typing import Tuple
 """
 
 
-def to_kv(k: str, v: Union[int, float]) -> Tuple[str, Union[int, float]]:
+def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
     """
         This function takes in a string and an int or a
         float and returns a tuple with the first element
