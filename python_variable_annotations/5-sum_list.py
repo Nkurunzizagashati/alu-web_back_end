@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
 
 """
-    This module contains a function that will take a list
-    of floats as an argument and returns the sum of the list
+    This module contains a function that takes in
+    a list of floats and returns the sum of them
+"""
+
+from typing import List
+"""
+    Imported List from typing and its the one that will
+    help us to mention that it should be a list of floats
 """
 
 
-type input_list = list[float]
-
-def sum_list(input_list) -> float:
+def sum_list(input_list: List[float]) -> float:
     """
         This function takes in a list of floats(input_list)
         and returns its sum which should be of float type
