@@ -9,6 +9,7 @@
 
 import asyncio
 import random
+from typing import Generator
 """
     Imported asyncio and random modules, the random will
     help us to generate random numbers, whereas asyncio will
@@ -17,7 +18,7 @@ import random
 """
 
 
-async def async_generator() -> float:
+async def async_generator() -> Generator[float, None, None]:
     """
         This coroutine takes no argument, it will
         generate random numbers between 0 and 10
