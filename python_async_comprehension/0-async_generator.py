@@ -9,10 +9,12 @@
 
 import asyncio
 import random
+from typing import Generator
 """
     Imported asyncio and random modules, the random will
     help us to generate random numbers, whereas asyncio will
-    help us to run the code asynchronously
+    help us to run the code asynchronously, and also imported
+    Generator from typing for specifying the return value
 """
 
 
