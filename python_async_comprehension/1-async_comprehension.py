@@ -22,3 +22,5 @@ def async_comprehension() -> List:
         using an async comprehensing over async_generator,
         then return the 10 random numbers
     """
+
+    return [i async for i in async_generator()]
