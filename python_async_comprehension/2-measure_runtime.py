@@ -7,3 +7,7 @@
 
     The coroutine should measure the total runtime and return it
 """
+
+import asyncio
+from typing import List
+async_comprehension == __import__('1.async_comprehension')/n.async_comprehension
