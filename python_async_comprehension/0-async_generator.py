@@ -18,7 +18,7 @@ from typing import Generator
 """
 
 
-async def async_generator():
+async def async_generator() -> Generator[float, NoneType, NoneType]:
     """
         This coroutine takes no argument, it will
         generate random numbers between 0 and 10
