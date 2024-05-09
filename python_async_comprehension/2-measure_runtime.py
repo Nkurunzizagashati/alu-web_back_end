@@ -14,7 +14,6 @@ import asyncio
 async_comprehension = __import__('1-async_comprehension').async_comprehension
 
 
-
 async def measure_runtime() -> float:
     """
         This coroutine will execute async_comprehension
@@ -28,7 +27,7 @@ async def measure_runtime() -> float:
         async_comprehension(),
         async_comprehension(),
         async_comprehension(),
-        async_comprehension(),
+        async_comprehension()
     )
 
     end_time = perf_counter()
