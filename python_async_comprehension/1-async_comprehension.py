@@ -16,7 +16,7 @@ from typing import List
 async_generator = __import__('0-async_generator').async_generator
 
 
-def async_comprehension() -> List:
+def async_comprehension():
     """
         This coroutine coroutine will collect 10 random numbers
         using an async comprehensing over async_generator,
