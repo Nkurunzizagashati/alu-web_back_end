@@ -1,4 +1,4 @@
-#!/usr/bin/node python3
+#!/usr/bin/env python3
 
 """
     This module contains a coroutine that imports async_comprehension
