@@ -9,8 +9,6 @@
 
 import asyncio
 import random
-from typing import Generator
-from typing import NoneType
 """
     Imported asyncio and random modules, the random will
     help us to generate random numbers, whereas asyncio will
