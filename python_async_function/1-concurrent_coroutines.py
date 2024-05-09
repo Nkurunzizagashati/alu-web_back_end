@@ -9,4 +9,14 @@
 """
 
 import asyncio
+from typing import List
 wait_random = __import__('0-basic_async_syntax').wait_random
+
+
+async def wait_n(n, max_delay) -> List[float]:
+    """
+        This async routine takes in two int arguments and
+        returns a list of all the delays
+    """
+
+    return [i async for i in wait_random()]
