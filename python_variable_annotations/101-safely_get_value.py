@@ -5,11 +5,10 @@
     to the function's params
 """
 
-from typing import TypeVar, Dict, Any
+from typing import TypeVar, Mapping, Any
 
-T = TypeVar('T')
 
-def safely_get_value(dct: Dict[Any, T], key: Any, default: T = None) -> T:
+def safely_get_value(dct: Mapping[Any, T], key: Any, default: T = None) -> Union[T, None]:
     """
         Added the correct type annotation to this function
     """
