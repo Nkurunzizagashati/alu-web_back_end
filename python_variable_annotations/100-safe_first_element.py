@@ -7,6 +7,7 @@
 
 from typing import Sequence, Any, Union, Optional
 
+
 def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
     """
         Augmented this function with the correct type annotation
