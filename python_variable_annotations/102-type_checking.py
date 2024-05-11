@@ -5,7 +5,7 @@
 
 from typing import Tuple, Sequence, Any, List
 
-def zoom_array(lst: Tuple, factor: int = 2) -> Tuple[Any]:
+def zoom_array(lst: Tuple, factor: int = 2) -> Tuple[Any, ...]:
     zoomed_in: Tuple[Any, ...] = tuple(
         item for item in lst
         for i in range(factor)
