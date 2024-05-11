@@ -5,11 +5,11 @@
 
 from typing import Tuple, Sequence, Any, List
 
-def zoom_array(lst: Tuple, factor: int = 2) -> List[Any, ...]:
-    zoomed_in: List[Any, ...] = tuple(
+def zoom_array(lst: Tuple, factor: int = 2) -> List[int]:
+    zoomed_in: List[int] = List[
         item for item in lst
         for i in range(factor)
-    )
+    ]
     return zoomed_in
 
 array = [12, 72, 91]
