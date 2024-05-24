@@ -101,3 +101,25 @@ def get_db() -> connection.MySQLConnection:
         host=db_host,
         database=db_name
     )
+
+
+def main() -> None:
+    """
+    Retrieves all rows from the users table
+    and logs each row in a filtered format.
+    """
+
+    logger = get_logger()
+    db_connection = get_db()
+    cursor = db_connection.cursor(dictionary=True)
+    cursor.execute("SELECT * FROM users")
+
+    for row in cursor.fetchall():
+        message = "; ".join([f"{key}={value}" for key, value in row.items()])
+        logger.info(message)
+
+    cursor.close()
+    db_connection.close()
+
+if __name__ == "__main__":
+    main()
