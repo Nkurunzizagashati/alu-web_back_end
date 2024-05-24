@@ -9,6 +9,7 @@ import logging
 import os
 import mysql.connector
 from mysql.connector import connection
+import bcrypt
 
 PII_FIELDS = ("name", "email", "phone", "ssn", "password")
 
@@ -101,6 +102,21 @@ def get_db() -> connection.MySQLConnection:
         host=db_host,
         database=db_name
     )
+
+
+def hash_password(password: str) -> bytes:
+    """
+    Hashes a password using bcrypt with a salt.
+
+    Args:
+        password (str): The password to hash.
+
+    Returns:
+        bytes: The hashed password.
+    """
+    salt = bcrypt.gensalt()
+    hashed_password = bcrypt.hashpw(password.encode(), salt)
+    return hashed_password
 
 
 def main() -> None:
