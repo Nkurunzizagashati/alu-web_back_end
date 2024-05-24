@@ -8,7 +8,7 @@ from typing import List
 
 
 def filter_datum(fields: List, redaction: string,
-                 message: string, separator: string):
+                 message: string, separator: string) -> string:
     """
         returns the log message obfuscated
 
@@ -22,5 +22,4 @@ def filter_datum(fields: List, redaction: string,
         is separating all fields in the log line.
     """
     pattern = '|'.join([f'{field}=[^ {separator}]+' for field in fields])
-    return re.sub(pattern, lambda m: f'{m.group().
-                    split("=")[0]}={redaction}', message)
+    return re.sub(pattern, lambda m: f'{m.group().split("=")[0]}={redaction}', message)
