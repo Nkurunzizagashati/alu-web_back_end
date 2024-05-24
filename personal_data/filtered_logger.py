@@ -26,6 +26,7 @@ def filter_datum(fields: List[str], redaction: str,
     return re.sub(pattern, lambda m: f'{m.group().split("=")[0]}={redaction}',
                   message)
 
+
 class RedactingFormatter(logging.Formatter):
     """ Redacting Formatter class
     """
