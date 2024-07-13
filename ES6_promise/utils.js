@@ -1,7 +1,7 @@
 // 100-await.js
 import { uploadPhoto, createUser } from "./utils";
 
-export default async function asyncUploadUser() {
+async function asyncUploadUser() {
   try {
     const photo = await uploadPhoto();
     const user = await createUser();
@@ -10,3 +10,5 @@ export default async function asyncUploadUser() {
     return { photo: null, user: null };
   }
 }
+
+asyncUploadUser();
