@@ -1,13 +1,12 @@
-export function uploadPhoto() {
-  return Promise.resolve({
-    status: 200,
-    body: 'photo-profile-1',
-  });
-}
+// 100-await.js
+import { uploadPhoto, createUser } from "./utils";
 
-export function createUser() {
-  return Promise.resolve({
-    firstName: 'Guillaume',
-    lastName: 'Salva',
-  });
+export default async function asyncUploadUser() {
+  try {
+    const photo = await uploadPhoto();
+    const user = await createUser();
+    return { photo, user };
+  } catch (error) {
+    return { photo: null, user: null };
+  }
 }
