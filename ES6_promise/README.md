@@ -1,1 +1,1 @@
-# ES6 Promises
+# es6 promise
